@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suppressions PUBLIC
+    "-//Checkstyle//DTD SuppressionXpathFilter Experimental Configuration 1.2//EN"
+    "https://checkstyle.org/dtds/suppressions_1_2_xpath_experimental.dtd">
+
+<suppressions>
+    <!-- START of legacy code, all violations will be resolved during transition to main project -->
+    <suppress checks="IllegalCatchExtended" files=".*[\\/]src[\\/]main[\\/]"/>
+    <suppress checks="ForbidAnnotation" files=".*[\\/]src[\\/]main[\\/]"/>
+
+    <suppress checks="ForbidAnnotation" files=".*[\\/]src[\\/]test[\\/]"/>
+    <suppress checks="AvoidModifiersForTypes" files=".*[\\/]src[\\/]main[\\/]"/>
+    <!-- END of legacy code -->
+
+
+    <!-- parsing of xml imply reference attribute names, does not make sense to move all to special variables -->
+    <suppress checks="MultipleStringLiteralsExtended" files="CheckstyleProfileImporter\.java"/>
+    <!-- till https://github.com/checkstyle/sonar-checkstyle/issues/135 -->
+    <suppress checks="MultipleStringLiteralsExtended" files="CheckstylePlugin\.java"/>
+
+
+    <!-- Tone down the checking for test code -->
+    <suppress checks="MultipleStringLiteralsExtended" files=".*[\\/]src[\\/]test[\\/]"/>
+    <suppress checks="ForbidCCommentsInMethods" files=".*[\\/]src[\\/]test[\\/]"/>
+</suppressions>
