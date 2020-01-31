@@ -81,15 +81,13 @@
   </ciManagement>
 
   <properties>
-    <checkstyle.version>8.20</checkstyle.version>
+    <checkstyle.version>8.29</checkstyle.version>
     <sonar.version>6.7</sonar.version>
     <sonar-java.version>5.12.0.17701</sonar-java.version>
     <maven.checkstyle.plugin.version>2.17</maven.checkstyle.plugin.version>
     <maven.sevntu.checkstyle.plugin.version>1.33.0</maven.sevntu.checkstyle.plugin.version>
     <!-- it should be a version of checkstyle that is compatible/compiled with sevntu -->
-    <maven.sevntu.checkstyle.plugin.checkstyle.version>
-      8.18
-    </maven.sevntu.checkstyle.plugin.checkstyle.version>
+    <maven.sevntu.checkstyle.plugin.checkstyle.version>8.29</maven.sevntu.checkstyle.plugin.checkstyle.version>
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
